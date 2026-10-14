@@ -1,0 +1,15 @@
+# Python virtual environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local test video
+traffic.mp4
+
+# Downloaded YOLO weights
+yolov8n.pt
+
+# Secrets
+.env
+.env.*
+!.env.example

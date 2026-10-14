@@ -1,4 +1,5 @@
 import json
+
 import math
 import cv2
 import base64
@@ -294,7 +295,8 @@ class VehicleDetectionTracker:
                     annotated_frame = self._decode_image_base64(response['annotated_frame_base64'])
                     if annotated_frame is not None:
                         # Display the annotated frame in a window
-                        cv2.imshow("Video Detection Tracker - YOLOv8 + bytetrack", annotated_frame)
+                        display_frame = cv2.resize(annotated_frame, (960, 540))
+                        cv2.imshow("Video Detection Tracker - YOLOv8 + bytetrack", display_frame)
                 # Call the callback with the response
                 result_callback(response)
                 # Break the loop if 'q' is pressed

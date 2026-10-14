@@ -8,3 +8,21 @@ __pycache__/
 
 # PyPI configuration file (do not include in the repository!)
 ~/.pypirc
+
+
+# Python virtual environment
+.venv/
+
+# Python cache
+*.py[cod]
+
+# Local test video
+traffic.mp4
+
+# Downloaded YOLO weights
+yolov8n.pt
+
+# Secrets
+.env
+.env.*
+!.env.example
